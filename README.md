@@ -4,4 +4,4 @@ Este proyecto esta hecho en python:
 - PyAutoGUI 0.9.54
 
 Info:
-Es un proyecto de practica!
+Es un proyecto de practica! El proyecto esta oriendado a crear automatizacion de movimiento en un servidor privado de RuneScape Old School llamado IKOV.
