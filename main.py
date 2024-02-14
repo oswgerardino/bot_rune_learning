@@ -1,6 +1,4 @@
 from src import App
 
-
-while True:
-    print('iniciando app')
-    app = App()
+print('iniciando app')
+app = App()

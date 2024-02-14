@@ -1,3 +1,6 @@
+"""
+Descripcion: Estos colores son de los pixeles pixeles de los items inGame 
+"""
 colores = {
     'log': {
         'r': 626,

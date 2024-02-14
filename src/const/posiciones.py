@@ -1,3 +1,6 @@
+"""
+Descripcion: Estas posiciones son en pixeles, basado en la organizacion que hace la funcion src/utils/CaptureWin()
+"""
 posiciones = {
     'compass': {
         'x': 626,

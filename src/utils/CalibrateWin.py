@@ -1,6 +1,4 @@
 import pyautogui
-import time
-from .GetCapture import GetCapture
 from src.const import posiciones as pos
 from src.const import colores as color
 from src.utils.ErrorLogs import ErrorLogs as msglog
@@ -20,8 +18,6 @@ def CalibrateWin():
     if pyautogui.pixelMatchesColor(pos['compass']['x'],pos['compass']['y'], color_deseado):
         msglog("El color en la posición especificada coincide con el color deseado.",'info')
         
-        GetCapture(pos['compass']['x'],pos['compass']['y'], 100, 100)
-        
         pyautogui.click(pos['compass']['x'],pos['compass']['y'], duration=1)
         
         # Verifica si la imagen está presente en la pantalla
@@ -39,9 +35,9 @@ def CalibrateWin():
 
     
     #encontrar compass
-    x,y = pyautogui.locateCenterOnScreen(intf['minimap']['compass'], grayscale=True, confidence=0.9, region=(500,0, 200, 100))
-    time.sleep(1)
+    #x,y = pyautogui.locateOnScreen(intf['minimap']['compass'], grayscale=True, confidence=0.9, region=(0,0, 50, 100))
+    #time.sleep(1)
     #click en compass para colocar la pantalla en una posicion norte
-    pyautogui.moveTo(x,y,duration=.5)
+    #pyautogui.moveTo(x,y,duration=.5)
 
     return False
